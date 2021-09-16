@@ -56,9 +56,9 @@ function checkLoggedUser() {
     if (storedUsername != null && storedPassword != null) //se è loggato => trova qualcosa nel local storage
     {
         hideForm();
-        logoutButton.disabled = false;
+        /*logoutButton.disabled = false;*/
     }
-
+    else logOut();
 }
 
 function logOut() {
